@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07326BAD218C05B80013A9D0 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07326BAC218C05B80013A9D0 /* ViewControllerSpec.swift */; };
+		07326BAF218C06690013A9D0 /* QuickSpec+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07326BAE218C06690013A9D0 /* QuickSpec+Extension.swift */; };
+		07326BB1218C06DA0013A9D0 /* ViewIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07326BB0218C06DA0013A9D0 /* ViewIdentifiable.swift */; };
+		07326BB3218C07CE0013A9D0 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07326BB2218C07CE0013A9D0 /* XCTestCase+Extension.swift */; };
+		07326BB5218C09000013A9D0 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07326BB4218C09000013A9D0 /* CustomLabel.swift */; };
+		07326BB7218C0C650013A9D0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07326BB6218C0C650013A9D0 /* UIView+Extension.swift */; };
+		07326BBA218C0D660013A9D0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07326BB9218C0D660013A9D0 /* Helpers.swift */; };
 		07C00549218C049F00E8C091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C00548218C049F00E8C091 /* AppDelegate.swift */; };
 		07C0054B218C049F00E8C091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0054A218C049F00E8C091 /* ViewController.swift */; };
 		07C0054E218C049F00E8C091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C0054C218C049F00E8C091 /* Main.storyboard */; };
@@ -27,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07326BAC218C05B80013A9D0 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		07326BAE218C06690013A9D0 /* QuickSpec+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuickSpec+Extension.swift"; sourceTree = "<group>"; };
+		07326BB0218C06DA0013A9D0 /* ViewIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIdentifiable.swift; sourceTree = "<group>"; };
+		07326BB2218C07CE0013A9D0 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		07326BB4218C09000013A9D0 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		07326BB6218C0C650013A9D0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		07326BB9218C0D660013A9D0 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		07C00545218C049F00E8C091 /* BetterGetView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterGetView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C00548218C049F00E8C091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C0054A218C049F00E8C091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07326BAB218C05A40013A9D0 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				07326BAC218C05B80013A9D0 /* ViewControllerSpec.swift */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		07326BB8218C0C680013A9D0 /* ViewIdentifiable */ = {
+			isa = PBXGroup;
+			children = (
+				07326BB0218C06DA0013A9D0 /* ViewIdentifiable.swift */,
+				07326BB6218C0C650013A9D0 /* UIView+Extension.swift */,
+			);
+			path = ViewIdentifiable;
+			sourceTree = "<group>";
+		};
 		07C0053C218C049F00E8C091 = {
 			isa = PBXGroup;
 			children = (
@@ -84,12 +115,14 @@
 		07C00547218C049F00E8C091 /* BetterGetView */ = {
 			isa = PBXGroup;
 			children = (
+				07326BB8218C0C680013A9D0 /* ViewIdentifiable */,
 				07C00548218C049F00E8C091 /* AppDelegate.swift */,
 				07C0054A218C049F00E8C091 /* ViewController.swift */,
 				07C0054C218C049F00E8C091 /* Main.storyboard */,
 				07C0054F218C04A000E8C091 /* Assets.xcassets */,
 				07C00551218C04A000E8C091 /* LaunchScreen.storyboard */,
 				07C00554218C04A000E8C091 /* Info.plist */,
+				07326BB4218C09000013A9D0 /* CustomLabel.swift */,
 			);
 			path = BetterGetView;
 			sourceTree = "<group>";
@@ -97,8 +130,12 @@
 		07C0055C218C04A000E8C091 /* BetterGetViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				07326BAB218C05A40013A9D0 /* Specs */,
 				07C0055D218C04A000E8C091 /* BetterGetViewTests.swift */,
 				07C0055F218C04A000E8C091 /* Info.plist */,
+				07326BAE218C06690013A9D0 /* QuickSpec+Extension.swift */,
+				07326BB2218C07CE0013A9D0 /* XCTestCase+Extension.swift */,
+				07326BB9218C0D660013A9D0 /* Helpers.swift */,
 			);
 			path = BetterGetViewTests;
 			sourceTree = "<group>";
@@ -274,8 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07326BB1218C06DA0013A9D0 /* ViewIdentifiable.swift in Sources */,
 				07C0054B218C049F00E8C091 /* ViewController.swift in Sources */,
 				07C00549218C049F00E8C091 /* AppDelegate.swift in Sources */,
+				07326BB7218C0C650013A9D0 /* UIView+Extension.swift in Sources */,
+				07326BB5218C09000013A9D0 /* CustomLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07326BB3218C07CE0013A9D0 /* XCTestCase+Extension.swift in Sources */,
+				07326BAF218C06690013A9D0 /* QuickSpec+Extension.swift in Sources */,
 				07C0055E218C04A000E8C091 /* BetterGetViewTests.swift in Sources */,
+				07326BBA218C0D660013A9D0 /* Helpers.swift in Sources */,
+				07326BAD218C05B80013A9D0 /* ViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

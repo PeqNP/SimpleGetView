@@ -6,6 +6,7 @@ target 'BetterGetViewTests' do
     pod 'Quick', '~> 1.3.2'
     pod 'Nimble', '~> 7.3'
     pod 'KIF', '~> 3.7'
+    pod 'KIF/IdentifierTests', '~> 3.7'
     pod 'KIF-Quick'
     pod 'Spry', '~> 3.2'
     pod 'Spry+Nimble', '~> 3.2'
