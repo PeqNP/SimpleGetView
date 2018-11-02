@@ -13,6 +13,7 @@
 		07C00550218C04A000E8C091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C0054F218C04A000E8C091 /* Assets.xcassets */; };
 		07C00553218C04A000E8C091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C00551218C04A000E8C091 /* LaunchScreen.storyboard */; };
 		07C0055E218C04A000E8C091 /* BetterGetViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0055D218C04A000E8C091 /* BetterGetViewTests.swift */; };
+		EC79B32087FE912A677AD851 /* Pods_BetterGetViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38ED09A6C0FC80D970A72A44 /* Pods_BetterGetViewTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		07C00559218C04A000E8C091 /* BetterGetViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterGetViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C0055D218C04A000E8C091 /* BetterGetViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterGetViewTests.swift; sourceTree = "<group>"; };
 		07C0055F218C04A000E8C091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38ED09A6C0FC80D970A72A44 /* Pods_BetterGetViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterGetViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		832598BD1FBB86DC4C1BD728 /* Pods-BetterGetViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterGetViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetterGetViewTests/Pods-BetterGetViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		8518944D7E0126EA5E45EAA6 /* Pods-BetterGetViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterGetViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetterGetViewTests/Pods-BetterGetViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC79B32087FE912A677AD851 /* Pods_BetterGetViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				07C00547218C049F00E8C091 /* BetterGetView */,
 				07C0055C218C04A000E8C091 /* BetterGetViewTests */,
 				07C00546218C049F00E8C091 /* Products */,
+				8538343E23CA75A7E0501B34 /* Pods */,
+				1113D14C8E5C40A19483C05B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +103,23 @@
 			path = BetterGetViewTests;
 			sourceTree = "<group>";
 		};
+		1113D14C8E5C40A19483C05B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38ED09A6C0FC80D970A72A44 /* Pods_BetterGetViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8538343E23CA75A7E0501B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8518944D7E0126EA5E45EAA6 /* Pods-BetterGetViewTests.debug.xcconfig */,
+				832598BD1FBB86DC4C1BD728 /* Pods-BetterGetViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07C00565218C04A000E8C091 /* Build configuration list for PBXNativeTarget "BetterGetViewTests" */;
 			buildPhases = (
+				80A321038053BBEAEEBF3777 /* [CP] Check Pods Manifest.lock */,
 				07C00555218C04A000E8C091 /* Sources */,
 				07C00556218C04A000E8C091 /* Frameworks */,
 				07C00557218C04A000E8C091 /* Resources */,
+				EE1B5086B7983335011E9849 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +217,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80A321038053BBEAEEBF3777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetterGetViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE1B5086B7983335011E9849 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BetterGetViewTests/Pods-BetterGetViewTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AutoEquatable/AutoEquatable.framework",
+				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+				"${BUILT_PRODUCTS_DIR}/KIF-Quick/KIF_Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/Spry/Spry.framework",
+				"${BUILT_PRODUCTS_DIR}/Spry+Nimble/Spry_Nimble.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoEquatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF_Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spry_Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetterGetViewTests/Pods-BetterGetViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07C00541218C049F00E8C091 /* Sources */ = {
@@ -394,8 +471,8 @@
 		};
 		07C00566218C04A000E8C091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8518944D7E0126EA5E45EAA6 /* Pods-BetterGetViewTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DSZ2DNDVRK;
@@ -415,8 +492,8 @@
 		};
 		07C00567218C04A000E8C091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832598BD1FBB86DC4C1BD728 /* Pods-BetterGetViewTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DSZ2DNDVRK;
